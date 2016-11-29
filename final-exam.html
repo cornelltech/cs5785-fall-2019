@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CS5785 Assignments</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://tech.cornell.edu/">Cornell Tech</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="lectures.html">Lectures</a>
+            </li>
+            <li>
+              <a href="assignments.html">Assignments</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/banner.png'); background-color: #777;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>Assignments</h1>
+              <hr class="small">
+              <span class="subheading">Instructions and Tutorial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+          <h1>About The Exam</h1>
+          <p>The format of the exam is a mock peer-reviewed conference. You will develop an algorithm, prepare a professional paper, submit an anonymized version to&nbsp;the EasyChair conference system, and peer-review the work of your classmates. There are three deliverables:</p>
+          <ul>
+            <li><strong>Phase 1: Develop your algorithm and write your writeup</strong></li>
+            <ul>
+              <li>Develop your algorithm and submit your results to the Kaggle leaderboard. <strong>Deadline: Tuesday, Dec 6, 11:59 PM EST.</strong></li>
+              <li>Write your paper submission and <a href="https://easychair.org/conferences/?conf=iccfeprc2016">submit to EasyChair</a>&nbsp;using your Program Committee account in the Author role.&nbsp;<strong>Deadline: Friday, Dec 4, 11:59 PM EST</strong>. There should be only one submission from each team.</li>
+            </ul>
+            <li><strong>Phase 2: Peer-review classmates' work!</strong></li>
+            <ul>
+              <li>Write reviews and submit via EasyChair using your Program Committee account. <strong>Deadline: Thursday, Dec 8, 11:59 PM EST</strong>. (Will open after Tuesday)</li>
+              <li><em>Everybody</em> on each team must log in and complete their peer reviews. (They are not "per-team")</li>
+            </ul>
+          </ul>
+          <h1>The Challenge: Build a large-scale image search engine!</h1>
+
+          <p>
+            The UK government has just passed an exciting new surveillance bill that allows the government to spy on any citizen for any reason! These new legislative powers record and harvest images from every camera in the world without a warrant. However, government agents do not have the data science skills or coding chops to make sense of this large-scale imagery. The only natural solution: <em>outsourcing the problem to Startups Like Yours!</em> What a delicious opportunity for data scientists to score some sweet public funding! You and your team of <strong>two to three Cornell Tech students</strong> are surely on the path to fame and fortune!
+          </p>
+
+          <p>
+            The specifications are simple: Our agents need a way to <strong>search for relevant images</strong> given a natural language query. For instance, if an agent types "dog jumping to catch frisbee," your system will <strong>rank the most relevant images</strong> from a large database.
+          </p>
+
+          <p> "This system will be important," they tell you! "We can use it to find propaganda! And contraband! And public enemies! All to protect our country and our children! And root out <em>terrible terrorists</em>!" </p>
+
+          <p>
+            Ignoring the obvious ethical implications, here are some clear specifications:
+            <ul>
+              <li><strong>During training,</strong> you have a dataset of 10,000 samples. Each sample has the following data available for learning:</li>
+              <ul>
+                <li>A 224x224 JPEG image</li>
+                <li>A list of tags (such as objects in the image)</li>
+                <li>A feature vector extracted using <a href="https://arxiv.org/abs/1512.03385">ResNet</a>, a state-of-the-art Deep-learned CNN. (You don't have to train this or run it -- we are providing the features for you)</li>
+                <li>Five sentence descriptions, used to train your search engine</li>
+              </ul>
+              <li><strong>During testing,</strong> your system matches a <em>single sentence description</em> against a pool of 2,000 <em>candidate images</em>. from the testing set. Each sample has:</li>
+              <ul>
+                <li>A JPEG image</li>
+                <li>A list of tags for that image</li>
+                <li>A ResNet feature vector for that image</li>
+              </ul>
+            </ul>
+            <li><strong>Output</strong>: For each sentence, your system must <strong>score</strong> each testing image with the likelihood that that image matches that sentence. This lets you rank all the testing images from most important to least important.</li>
+            <li><strong>Evaluation metric</strong>: There are 2,000 sentences, and for each sentence, you must compare against the entire 2,000-image test set. We will use <strong>Precision@20</strong> as the evaluation metric. This metric counts a sentence as correct if the corresponding image is among your algorithm's 20 highest scoring images.</li>
+          </p>
+
+          <p>
+            Use all of your skills, tools, and experience. It is OK to use libraries like scikit-learn, as long as you cite them. When you are finished, submit your results to the Kaggle leaderboard and send your complete writeup to EasyChair.
+
+          The data you use --- and the way you use this data --- is completely up to you.
+          </p>
+
+          <p>The best teams (of <strong>two to three Cornell Tech students</strong>, recall) might use visualization techniques, dimensionality reduction, preprocessing, supervised and/or unsupervised learning to best understand how to best take advantage of each data source available to them.</p>
+          <p>The best reports are professionally written. They will describe the data pipeline in detail, including motivations for which data is used and why. They will contain a detailed Experiment section and a Results section. If time permits, a background section can help to point out the relevant state-of-the-art in the image retrieval literature. Remember to include your team name on Kaggle so we know who you are.</p>
+          <p>The best reports use a professional style adopted by a major academic conference. NIPS is a good choice. Teams can download a template from Section 4 Paper Format of the <a href="https://nips.cc/Conferences/2015/PaperInformation/AuthorSubmissionInstructions">NIPS Author Guidelines</a>. We recommend you to use the LaTeX template, but this is not a requirement. If you're more familiar with Word, use Word.</p>
+          <p>The best peer reviews will be detailed and thorough, pointing out potential areas of improvement as well as complimenting their peers' strengths.</p>
+          <p>The best teams understand how to divide the precious time and energy among all members of the group. They might split into roles, preventing programming students from messing up the writing and ensuring writing gurus don't screw up the code. Close contact is always maintained within top-performing teams. When hardship happens within the best teams, blame is not assigned---it is overcome.</p>
+          <p>May the best team win. God help us all.</p>
+          <p>-- Agent Belongie</p>
+          <h2>Rules</h2>
+          <p>You are strongly encouraged to work in groups of two or three students.</p>
+          <p>Groups may not collaborate with other groups. You cannot cite other teams' work. This includes sharing data, results, writing, or discussing with other groups. You <strong>may not</strong> view reports from other teams until <strong>after</strong> the peer-review phase begins!</p>
+          <h1>How to anonymize your&nbsp;paper</h1>
+          <p>The "Peer Review" phase will be double-blind. This means authors will not know who the reviewers are, and the reviewers should not know who the authors are. This protects both sides.</p>
+          <p>To maintain anonymity, <strong>don'</strong>t include team member names in the actual paper that you submit to EasyChair!</p>
+          <p>However,&nbsp;<strong>do</strong> indicate all team member&nbsp;names as authors on the EasyChair web page when you submit your paper! This will be hidden from your reviewers.</p>
+          <p><img src="http://i.imgur.com/F255rFT.png" alt="" width="368" height="309"></p>
+          <h2>Peer Review Tips</h2>
+          <p>See the following resources for tips on how to write a professional review:</p>
+          <ul>
+            <li><span style="font-size: 1em; line-height: 1.5em;">Matthew Might’s notes on </span><a href="http://matt.might.net/articles/how-to-peer-review/" style="font-size: 1em; line-height: 1.5em;">how to peer review</a><span style="font-size: 1em; line-height: 1.5em;">&nbsp;and </span><a href="http://matt.might.net/articles/peer-fortress/" style="font-size: 1em; line-height: 1.5em;">Peer Fortress: The Scientific Battlefield</a><span style="font-size: 1em; line-height: 1.5em;">&nbsp;(the last one provides examples NOT to follow)</span></li>
+            <li><a href="http://www.pamitc.org/cvpr16/reviewer_guidelines.php" style="font-size: 1em; line-height: 1.5em;">CVPR 2016 Reviewer’s Guidelines</a><span style="font-size: 1em; line-height: 1.5em;">.</span></li>
+            <li><a href="http://mobilehci.acm.org/2015/download/ExcellenceInReviewsforHCICommunity.pdf" style="font-size: 1em; line-height: 1.5em;" class="pdf-link">So You're a Program Committee Member Now: On Excellence in Reviews and Meta-Reviews and Championing Submitted Work That Has Merit</a></li>
+          </ul>
+          <h1>How to submit your paper to EasyChair</h1>
+          <p>Every student should have an email in their Cornell inbox containing a link to sign into EasyChair as a program committee member.</p>
+          <p>To submit the assignment, the team leader should log into EasyChair and switch to the Author&nbsp;role&nbsp;using the "Change Role" menu option on the top right:</p>
+          <p><img src="http://i.imgur.com/omXGAg0.png" alt="" width="372" height="289"></p>
+          <p>From there, the author can start a new submission using the menu on the top left. Be sure to put team members on the web page rather than on the paper PDF itself (see "How to anonymize your paper" above). You can come back and change your submission any time before the deadline.</p>
+          <p><img src="http://i.imgur.com/pYFO4dK.png" alt="" width="500" height="324"></p>
+          <h2>Score Breakdown</h2>
+          <ul>
+            <li><span style="font-size: 1em; line-height: 1.5em;">30% on Kaggle performance (classification accuracy on the private test set).</span></li>
+            <li><span style="font-size: 1em; line-height: 1.5em;">30% on method: does it make sense? is it suited to the task? is it creative?</span></li>
+            <li><span style="font-size: 1em; line-height: 1.5em;">30% on report: is the proposed method clearly described? is it professionally written? does it include enough detail for a professional (ie. skilled graduate student) to re-implement the results? A good report should at least contain a brief introduction of what you did, a detailed description of your method, an experimental evaluation part that&nbsp;shows the experimental results and analysis of your results.&nbsp;</span></li>
+            <li><span style="font-size: 1em; line-height: 1.5em;">10% on the quality of peer review: is it well-written and thoughtful? does it provide insight to the authors?</span></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+      </div>
+
+      <hr>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <p class="copyright text-muted">Copyright &copy; Applied Machine Learning 2016<br/>Maintanence: Longqi: ly283@cornell.edu</p>
+            </div>
+          </div>
+      </footer>
+
+      <!-- jQuery -->
+      <script src="js/jquery.js"></script>
+
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+
+      <!-- Custom Theme JavaScript -->
+      <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
+</html>
