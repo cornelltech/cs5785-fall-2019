@@ -26,10 +26,6 @@ h6 {
   font-weight: 800;
 }
 a {
-  color: #404040;
-}
-a:hover,
-a:focus {
   color: #0085a1;
 }
 a img:hover,
@@ -215,7 +211,6 @@ hr.small {
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
-  text-decoration: none;
   color: #0085a1;
 }
 .post-preview > a > .post-title {
@@ -235,8 +230,7 @@ hr.small {
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
-  text-decoration: none;
-  color: #404040;
+  color: #0085a1;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
