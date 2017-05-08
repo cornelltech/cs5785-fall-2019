@@ -168,14 +168,15 @@
             <ul>
               <li><strong>images_train</strong>&nbsp;- 10,000 training images of size 224x224.</li>
               <li><strong>images_test</strong>&nbsp;- 2,000 test&nbsp;images of size 224x224.</li>
-              <li><strong>tags_train</strong>&nbsp;- image tags correspond to training images. Each image have several tags indicating the object categories appears in the image, in the form of "supercategory:category".</li>
-              <li><strong>tags_test</strong>&nbsp;- image tags correspond to test&nbsp;images. Each image have several tags indicating the object categories appears in the image, in the form of "supercategory:category".</li>
-              <li><strong>features_train</strong>&nbsp;- features extracted from a pre-trained Residual Network (ResNet) on training set, including 1,000 dimensional feature from classification&nbsp;layer (fc1000) and 2,048 dimensional feature from final convolution layer (pool5).</li>
-              <li><strong>features_test</strong>&nbsp;- features extracted from a pre-trained Residual Network (ResNet) on test&nbsp;set, including 1,000 dimensional feature from classification&nbsp;layer&nbsp;(fc1000) and 2,048 dimensional feature from final convolution layer (pool5).</li>
+              <li><strong>tags_train</strong>&nbsp;- image tags correspond to training images. Each image have several tags indicating the human-labeled object categories appear in the image, in the form of "supercategory:category".</li>
+              <li><strong>tags_test</strong>&nbsp;- image tags correspond to test&nbsp;images. Each image have several tags indicating the human-labeled object categories appear in the image, in the form of "supercategory:category".</li>
+              <li><strong>features_train</strong>&nbsp;- features extracted from a pre-trained Residual Network (ResNet) on training set, including 1,000 dimensional feature from classification&nbsp;layer (fc1000) and 2,048 dimensional feature from final convolution layer (pool5). Each dimension of the fc1000 feature corresponds to a WordNet synset <a href="https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a">here</a>.</li>
+              <li><strong>features_test</strong>&nbsp;- features extracted from the same&nbsp;Residual Network (ResNet) on test&nbsp;set, including 1,000 dimensional feature from classification&nbsp;layer&nbsp;(fc1000) and 2,048 dimensional feature from final convolution layer (pool5).</li>
               <li><strong>descriptions_train</strong>&nbsp;- image descriptions correspond to training images. Each image have 5 sentences for describing the image content.</li>
               <li><strong>descriptions_test</strong>&nbsp;-&nbsp;image descriptions for&nbsp;test images. Each image have 5&nbsp;sentences&nbsp;for describing the image content.&nbsp;<em><strong>Notice that one test description corresponds to one test image. The task you need to do is to return&nbsp;top 20 images in test set for each test description.</strong></em></li>
               <li><strong>sample_submission.csv</strong>&nbsp;- a sample submission file in the correct format.</li>
             </ul>
+
           </div>
 
         </div>
