@@ -1,4 +1,4 @@
-# This is the website used for CS5785 Class at Cornell Tech
+# This is the website used for CS5785 (Applied ML) Class at Cornell Tech
 
 For any question about the website, please contact ylongqi@gmail.com
 
